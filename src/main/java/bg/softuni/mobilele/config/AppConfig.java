@@ -1,6 +1,6 @@
 package bg.softuni.mobilele.config;
 
-import bg.softuni.mobilele.model.User;
+import bg.softuni.mobilele.model.entity.User;
 import bg.softuni.mobilele.model.UserRegisterDTO;
 import org.modelmapper.Converter;
 import org.modelmapper.ModelMapper;

@@ -1,9 +1,9 @@
 package bg.softuni.mobilele.repository;
 
-import bg.softuni.mobilele.model.entity.User;
+import bg.softuni.mobilele.model.entity.Offer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface OfferRepository extends JpaRepository<Offer, Long> {
 }
