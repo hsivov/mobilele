@@ -145,8 +145,9 @@
         <div class="form-group">
             <label class="text-white font-weight-bold" th:for="description">Description</label>
             <textarea th:field="*{description}" type="textarea" class="form-control" rows="3"
-                      placeholder="Description"></textarea>
-            <p class="errors alert alert-danger">
+                      placeholder="Description"
+                      th:errorclass="is-invalid"></textarea>
+            <p th:errors="*{description}" class="invalid-feedback errors alert alert-danger">
                 Description is required.
             </p>
         </div>

@@ -1,5 +1,6 @@
 package bg.softuni.mobilele.service.impl;
 
+import bg.softuni.mobilele.model.UserLoginDTO;
 import bg.softuni.mobilele.model.entity.User;
 import bg.softuni.mobilele.model.UserRegisterDTO;
 import bg.softuni.mobilele.repository.UserRepository;
@@ -23,5 +24,10 @@ public class UserServiceImpl implements UserService {
         User user = modelMapper.map(userRegisterDTO,User.class);
 
         userRepository.save(user);
+    }
+
+    @Override
+    public void login(UserLoginDTO userLoginDTO) {
+
     }
 }
